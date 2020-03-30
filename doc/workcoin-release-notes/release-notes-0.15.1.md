@@ -7,7 +7,7 @@ performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/workcoin-project/workcoin/issues>
+  <https://github.com/minblock/workcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 

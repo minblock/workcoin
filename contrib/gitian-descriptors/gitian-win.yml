@@ -23,7 +23,7 @@ packages:
 - "python"
 - "rename"
 remotes:
-- "url": "https://github.com/workcoin-project/workcoin.git"
+- "url": "https://github.com/minblock/workcoin.git"
   "dir": "workcoin"
 files: []
 script: |
