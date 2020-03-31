@@ -31,6 +31,7 @@ packages:
 - "bsdmainutils"
 - "ca-certificates"
 - "python"
+- "xorg-dev"
 remotes:
 - "url": "https://github.com/minblock/workcoin.git"
   "dir": "workcoin"
