@@ -1,18 +1,20 @@
---- old/qtbase/src/plugins/platforms/android/androidjnimain.cpp
-+++ new/qtbase/src/plugins/platforms/android/androidjnimain.cpp
-@@ -890,6 +890,14 @@
-         __android_log_print(ANDROID_LOG_FATAL, "Qt", "registerNatives failed");
-         return -1;
-     }
-+
-+    const jint ret = QT_PREPEND_NAMESPACE(QtAndroidPrivate::initJNI(vm, env));
-+    if (ret != 0)
-+    {
-+        __android_log_print(ANDROID_LOG_FATAL, "Qt", "initJNI failed");
-+        return ret;
-+    }
-+
-     QWindowSystemInterfacePrivate::TabletEvent::setPlatformSynthesizesMouse(false);
+--- old/qtbase/mkspecs/android-clang/qmake.conf
++++ new/qtbase/mkspecs/android-clang/qmake.conf
+@@ -30,7 +30,7 @@
+     QMAKE_CFLAGS += -target mips64el-none-linux-android
  
-     m_javaVM = vm;
-
+ QMAKE_CFLAGS += -gcc-toolchain $$NDK_TOOLCHAIN_PATH
+-QMAKE_LINK    = $$QMAKE_CXX $$QMAKE_CFLAGS -Wl,--exclude-libs,libgcc.a
++QMAKE_LINK    = $$QMAKE_CXX $$QMAKE_CFLAGS -Wl,--exclude-libs,libgcc.a -nostdlib++
+ QMAKE_CFLAGS += -DANDROID_HAS_WSTRING --sysroot=$$NDK_ROOT/sysroot \
+                 -isystem $$NDK_ROOT/sysroot/usr/include/$$NDK_TOOLS_PREFIX \
+                 -isystem $$NDK_ROOT/sources/cxx-stl/llvm-libc++/include \
+@@ -40,7 +40,7 @@
+ ANDROID_SOURCES_CXX_STL_LIBDIR = $$NDK_ROOT/sources/cxx-stl/llvm-libc++/libs/$$ANDROID_TARGET_ARCH
+ 
+ ANDROID_STDCPP_PATH = $$ANDROID_SOURCES_CXX_STL_LIBDIR/libc++_shared.so
+-ANDROID_CXX_STL_LIBS = -lc++
++ANDROID_CXX_STL_LIBS = -lc++_shared
+ 
+ QMAKE_ARM_CFLAGS_RELEASE                   = -Oz
+ QMAKE_ARM_CFLAGS_RELEASE_WITH_DEBUGINFO    = -g -Oz
