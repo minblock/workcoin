@@ -7,7 +7,7 @@ performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/minblock/workcoin/issues>
+  <https://github.com/workcoin-project/workcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
@@ -92,7 +92,7 @@ descends from an invalid block is marked as such.
 Minimum relay fee lowered
 -------------------------
 
-The minimum relay fee `-minrelayfee` has been lowered to 0.01 lites per kB (0.00001 DNA). This is to prepare for dropping the minimum transaction fee to 0.1 lites per kB (0.0001 DNA) in the next release.
+The minimum relay fee `-minrelayfee` has been lowered to 0.01 lites per kB (0.00001 WOK). This is to prepare for dropping the minimum transaction fee to 0.1 lites per kB (0.0001 WOK) in the next release.
 
 Mempool replacement disabled by default
 ---------------------------------------

@@ -7,7 +7,7 @@ updates. It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/minblock/workcoin/issues>
+  <https://github.com/workcoin-project/workcoin/issues>
 
 Upgrading and downgrading
 =========================
@@ -52,9 +52,9 @@ is included in as separate release-notes.  This section describes the Workcoin-s
 Protocol:
 - Scrypt Proof-of-Work instead of sha256d, however block hashes are sha256d for performance reasons.
 - Workcoin TCP port 9333 (instead of 8333)
-- RPC TCP port 1032 (instead of 8332)
+- RPC TCP port 9332 (instead of 8332)
 - Testnet TCP port 19333 (instead of 18333)
-- Testnet RPC TCP port 11032 (instead of 18332)
+- Testnet RPC TCP port 19332 (instead of 18332)
 - 84 million coin limit  (instead of 21 million)
 - Magic 0xfbc0b6db       (instead of 0xf9beb4d9)
 - Target Block Time 2.5 minutes (instead of 10 minutes)
@@ -67,11 +67,11 @@ Protocol:
 Relay:
 - Workcoin Core rounds transaction size up to the nearest 1000 bytes before calculating fees.  This size rounding behavior is to mimic fee calculation of Workcoin v0.6 and v0.8.
 - Bitcoin's IsDust() is disabled in favor of Workcoin's fee-based dust penalty.
-- Fee-based Dust Penalty: For each transaction output smaller than DUST_THRESHOLD (currently 0.001 DNA) the default relay/mining policy will expect an additional 1000 bytes of fee.  Otherwise the transaction will be rejected from relay/mining.  Such transactions are also disqualified from the free/high-priority transaction rule.
+- Fee-based Dust Penalty: For each transaction output smaller than DUST_THRESHOLD (currently 0.001 WOK) the default relay/mining policy will expect an additional 1000 bytes of fee.  Otherwise the transaction will be rejected from relay/mining.  Such transactions are also disqualified from the free/high-priority transaction rule.
 - Miners and relays can adjust the expected fee per-KB with the -minrelaytxfee parameter.
 
 Wallet:
-- Coins smaller than 0.00001 DNA are by default ignored by the wallet.  Use the -mininput parameter if you want to see smaller coins.
+- Coins smaller than 0.00001 WOK are by default ignored by the wallet.  Use the -mininput parameter if you want to see smaller coins.
 
 Notable changes since Workcoin v0.8
 ===================================

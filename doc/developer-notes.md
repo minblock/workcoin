@@ -239,7 +239,7 @@ debug.log file if inconsistencies are detected.
 
 Valgrind is a programming tool for memory debugging, memory leak detection, and
 profiling. The repo contains a Valgrind suppressions file
-([`valgrind.supp`](https://github.com/minblock/workcoin/blob/master/contrib/valgrind.supp))
+([`valgrind.supp`](https://github.com/workcoin-project/workcoin/blob/master/contrib/valgrind.supp))
 which includes known Valgrind warnings in our dependencies that cannot be fixed
 in-tree. Example use:
 
@@ -402,7 +402,7 @@ Threads
 
 - DumpAddresses : Dumps IP addresses of nodes to peers.dat.
 
-- ThreadRPCServer : Remote procedure call handler, listens on port 1032 for connections and services them.
+- ThreadRPCServer : Remote procedure call handler, listens on port 9332 for connections and services them.
 
 - Shutdown : Does an orderly shutdown of everything.
 

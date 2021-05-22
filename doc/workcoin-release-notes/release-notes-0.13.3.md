@@ -7,7 +7,7 @@ It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/minblock/workcoin/issues>
+  <https://github.com/workcoin-project/workcoin/issues>
 
 Compatibility
 ==============
@@ -58,13 +58,13 @@ Reset Testnet
 -------------
 
 Testnet3 has been deprecated and replaced with Testnet4. The server port has been changed to 19335 however the RPC port remains
-the same (11032).
+the same (19332).
 
 Testnet faucets can be located at:
 - http://testnet.workcointools.com
 - http://testnet.thrasher.io
 
-Developers who require the new testnet blockchain paramaters can find them [here](https://github.com/minblock/workcoin/blob/0.13/src/chainparams.cpp#L214).
+Developers who require the new testnet blockchain paramaters can find them [here](https://github.com/workcoin-project/workcoin/blob/0.13/src/chainparams.cpp#L214).
 
 Credits
 =======

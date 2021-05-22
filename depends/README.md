@@ -12,9 +12,9 @@ For example:
 
     make HOST=x86_64-w64-mingw32 -j4
 
-A prefix will be generated that's suitable for plugging into Bitcoin's
+A prefix will be generated that's suitable for plugging into Workcoin's
 configure. In the above example, a dir named x86_64-w64-mingw32 will be
-created. To use it for Bitcoin:
+created. To use it for Workcoin:
 
     ./configure --prefix=`pwd`/depends/x86_64-w64-mingw32
 
@@ -44,7 +44,7 @@ No other options are needed, the paths are automatically configured.
 
 Common linux dependencies:
 
-    sudo apt-get install make automake cmake curl g++-multilib libtool binutils-gold bsdmainutils pkg-config python3 patch
+    sudo apt-get install make automake cmake curl g++-multilib libtool binutils-gold bsdmainutils pkg-config python3
 
 For linux ARM cross compilation:
 
@@ -77,7 +77,7 @@ The following can be set when running make: make FOO=bar
     BUILD_ID_SALT: Optional salt to use when generating build package ids
 
 If some packages are not built, for example `make NO_WALLET=1`, the appropriate
-options will be passed to bitcoin's configure. In this case, `--disable-wallet`.
+options will be passed to workcoin's configure. In this case, `--disable-wallet`.
 
 ### Additional targets
 
