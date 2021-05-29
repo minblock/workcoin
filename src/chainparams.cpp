@@ -101,10 +101,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xfb;
-        pchMessageStart[1] = 0xc0;
-        pchMessageStart[2] = 0xb6;
-        pchMessageStart[3] = 0xdb;
+        pchMessageStart[0] = 0x74; //t
+        pchMessageStart[1] = 0x65; //e
+        pchMessageStart[2] = 0x73; //s
+        pchMessageStart[3] = 0x74; //t
         nDefaultPort = 33888;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 22;
@@ -123,7 +123,7 @@ public:
         vSeeds.emplace_back("pgn.one");
         vSeeds.emplace_back("seed.mchub.ca");
         vSeeds.emplace_back("seed.provgn.com");
-        vSeeds.emplace_back("seed.picsco.in");
+        vSeeds.emplace_back("seed.provigen.net");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
