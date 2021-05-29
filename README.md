@@ -1,7 +1,7 @@
 Workcoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/workcoin-project/workcoin.svg?branch=master)](https://travis-ci.org/workcoin-project/workcoin)
+[![Build Status](https://travis-ci.org/minblock/workcoin.svg?branch=master)](https://travis-ci.org/minblock/workcoin)
 
 https://workcoin.org
 
@@ -27,7 +27,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/workcoin-project/workcoin/tags) are created
+completely stable. [Tags](https://github.com/minblock/workcoin/tags) are created
 regularly to indicate new official, stable release versions of Workcoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
