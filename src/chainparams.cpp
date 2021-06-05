@@ -64,11 +64,11 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 840000;
-        consensus.BIP16Height = 218579; // 87afb798a3ad9378fcd56123c81fb31cfd9a8df4719b9774d71730c16315a092 - October 1, 2012
-        consensus.BIP34Height = 710000;
+        consensus.BIP16Height = 0; // 19ceaa3d471c104b86d5cc158da7a81a13c72cd74943c689e209a711aa000f1e - may 24 2021
+        consensus.BIP34Height = 0;
         consensus.BIP34Hash = uint256S("19ceaa3d471c104b86d5cc158da7a81a13c72cd74943c689e209a711aa000f1e");
-        consensus.BIP65Height = 918684; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a
-        consensus.BIP66Height = 811879; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894
+        consensus.BIP65Height = 0; // 19ceaa3d471c104b86d5cc158da7a81a13c72cd74943c689e209a711aa000f1e
+        consensus.BIP66Height = 0; // 19ceaa3d471c104b86d5cc158da7a81a13c72cd74943c689e209a711aa000f1e
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
         consensus.nPowTargetSpacing = 2.5 * 60;
@@ -91,7 +91,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1672511820; // Fri Dec 31 2022 13:37:00 GMT-0500
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000200020");  //0
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x19ceaa3d471c104b86d5cc158da7a81a13c72cd74943c689e209a711aa000f1e"); //1
