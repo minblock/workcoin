@@ -1,7 +1,7 @@
 Description
 ------------
 
-This directory contains data-driven tests for various aspects of Workcoin.
+This directory contains data-driven tests for various aspects of WorkCoin.
 
 License
 --------

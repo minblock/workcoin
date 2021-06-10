@@ -62,12 +62,12 @@
         <translation>Derbyn cyfeiriadau</translation>
     </message>
     <message>
-        <source>These are your Workcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Rhain ydi eich cyfeiriadau Workcoin ar gyfer gyrru taliadau. Gwnewch yn sicr o'r swm a'r cyfeiriad derbyn cyn gyrru arian.</translation>
+        <source>These are your WorkCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Rhain ydi eich cyfeiriadau WorkCoin ar gyfer gyrru taliadau. Gwnewch yn sicr o'r swm a'r cyfeiriad derbyn cyn gyrru arian.</translation>
     </message>
     <message>
-        <source>These are your Workcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dyma eich cyfeiriadau Workcoin ar gyfer derbyn taliadau. Argymhellwn ddefnyddio cyfeiriad derbyn newydd ar gyfer bob trafodyn.</translation>
+        <source>These are your WorkCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dyma eich cyfeiriadau WorkCoin ar gyfer derbyn taliadau. Argymhellwn ddefnyddio cyfeiriad derbyn newydd ar gyfer bob trafodyn.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,6 +176,10 @@
         <translation>Waled Wedi Amgryptio</translation>
     </message>
     <message>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your workcoins from being stolen by malware infecting your computer.</source>
+        <translation>Bydd %1 nawr yn gorffen y broses amgryptio. Cofiwch nad ydy amgryptio eich waled yn llawn amddiffyn eich workcoins rhag cael eu dwyn gan afiechyd yn heintio eich cyfrifiadur.</translation>
+    </message>
+    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>PWYSIG: Mi ddylai unrhyw back ups blaenorol rydych wedi ei wneud o ffeil eich waled gael ei ddiweddaru efo'r ffeil amgryptiedig newydd ei chreu. Am resymau diogelwch, bydd back ups blaenorol o ffeil y walet heb amgryptio yn ddiwerth mor fuan ac yr ydych yn dechrau defnyddio'r waled amgryptiedig newydd.</translation>
     </message>
@@ -238,6 +242,10 @@
         <translation>&amp;Trosolwg</translation>
     </message>
     <message>
+        <source>Node</source>
+        <translation>Nod</translation>
+    </message>
+    <message>
         <source>Show general overview of wallet</source>
         <translation>Dangos trosolwg cyffredinol y waled</translation>
     </message>
@@ -294,6 +302,14 @@
         <translation>&amp;Newid cyfrinymadrodd...</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>&amp;Cyfeiriadau anfon...</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>&amp;Cyfeiriadau derbyn...</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>Agor &amp;URI...</translation>
     </message>
@@ -318,8 +334,8 @@
         <translation>Ailfynegi y blociau ar ddisg...</translation>
     </message>
     <message>
-        <source>Send coins to a Workcoin address</source>
-        <translation>Anfon arian i gyfeiriad Workcoin</translation>
+        <source>Send coins to a WorkCoin address</source>
+        <translation>Anfon arian i gyfeiriad WorkCoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -338,8 +354,12 @@
         <translation>&amp;Gwirio neges...</translation>
     </message>
     <message>
-        <source>Workcoin</source>
-        <translation>Workcoin</translation>
+        <source>WorkCoin</source>
+        <translation>WorkCoin</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Waled</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -362,12 +382,12 @@
         <translation>Amgryptio'r allweddi preifat sy'n perthyn i'ch waled</translation>
     </message>
     <message>
-        <source>Sign messages with your Workcoin addresses to prove you own them</source>
-        <translation>Arwyddo negeseuon gyda eich cyfeiriadau Workcoin i brofi mae chi sy'n berchen arnynt</translation>
+        <source>Sign messages with your WorkCoin addresses to prove you own them</source>
+        <translation>Arwyddo negeseuon gyda eich cyfeiriadau WorkCoin i brofi mae chi sy'n berchen arnynt</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Workcoin addresses</source>
-        <translation>Gwirio negeseuon i sicrhau eu bod wedi eu harwyddo gyda cyfeiriadau Workcoin penodol</translation>
+        <source>Verify messages to ensure they were signed with specified WorkCoin addresses</source>
+        <translation>Gwirio negeseuon i sicrhau eu bod wedi eu harwyddo gyda cyfeiriadau WorkCoin penodol</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -399,7 +419,7 @@
     </message>
     <message>
         <source>Open a workcoin: URI or payment request</source>
-        <translation>Agor Workcoin: URI neu ofyn taliad</translation>
+        <translation>Agor WorkCoin: URI neu ofyn taliad</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -440,10 +460,6 @@
     <message>
         <source>Up to date</source>
         <translation>Cyfamserol</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Ffenestr</translation>
     </message>
     <message>
         <source>Connecting to peers...</source>
@@ -508,8 +524,8 @@
         <translation>Mae'r waled &lt;b&gt;wedi'i amgryptio&lt;/b&gt; ac &lt;b&gt;ar glo&lt;/b&gt; ar hyn o bryd</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Workcoin can no longer continue safely and will quit.</source>
-        <translation>Mae gwall angheuol wedi digwydd. Ni all Workcoin barhau'n ddiogel ac mae'n cau lawr.</translation>
+        <source>A fatal error occurred. WorkCoin can no longer continue safely and will quit.</source>
+        <translation>Mae gwall angheuol wedi digwydd. Ni all WorkCoin barhau'n ddiogel ac mae'n cau lawr.</translation>
     </message>
 </context>
 <context>
@@ -607,6 +623,10 @@
     </context>
 <context>
     <name>HelpMessageDialog</name>
+    <message>
+        <source>Usage:</source>
+        <translation>Cynefod:</translation>
+    </message>
     </context>
 <context>
     <name>Intro</name>
@@ -615,8 +635,8 @@
         <translation>Croeso</translation>
     </message>
     <message>
-        <source>Workcoin</source>
-        <translation>Workcoin</translation>
+        <source>WorkCoin</source>
+        <translation>WorkCoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -757,10 +777,6 @@
     <message>
         <source>Label</source>
         <translation>Label</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Waled</translation>
     </message>
     </context>
 <context>
@@ -991,9 +1007,6 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -1025,8 +1038,12 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Workcoin Core</source>
-        <translation>Craidd Workcoin</translation>
+        <source>Options:</source>
+        <translation>Opsiynau:</translation>
+    </message>
+    <message>
+        <source>WorkCoin Core</source>
+        <translation>Craidd WorkCoin</translation>
     </message>
     <message>
         <source>Information</source>

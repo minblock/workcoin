@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Copia l'indirizzo selezionato nella clipboard di sistema</translation>
+        <translation>copia l'indirizzo selezionato correntemente nella clipboard di sistema</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -28,10 +28,6 @@
     <message>
         <source>Delete the currently selected address from the list</source>
         <translation>Cancella l'indirizzo attualmente selezionato dalla lista.</translation>
-    </message>
-    <message>
-        <source>Enter address or label to search</source>
-        <translation>Inserire indirizzo o etichetta da cercare</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -66,12 +62,12 @@
         <translation>Indirizzi riceventi</translation>
     </message>
     <message>
-        <source>These are your Workcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono i suoi indirizzi Workcoin per ricevere i pagamenti. Controlla sempre l'importo e gli indirizzi prima di inviare i coins.</translation>
+        <source>These are your WorkCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono i suoi indirizzi WorkCoin per ricevere i pagamenti. Controlla sempre l'importo e gli indirizzi prima di inviare i coins.</translation>
     </message>
     <message>
-        <source>These are your Workcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono i tuoi indirizzi Workcoin per ricevere i pagamenti. Si raccomanda di usare un nuovo indirizzo per ogni transazione.</translation>
+        <source>These are your WorkCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono i tuoi indirizzi WorkCoin per ricevere i pagamenti. Si raccomanda di usare un nuovo indirizzo per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -184,6 +180,10 @@
         <translation>Portafoglio criptato</translation>
     </message>
     <message>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your workcoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 ora si chiuderà per concludere il processo di criptaggio. Ricorda che criptare il tuo portafoglio non può definitivamente proteggere i tuoi workcoin da furti tramite malware che infetta il tuo computer.</translation>
+    </message>
+    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>IMPORTANTE: Qualsiasi backup precedentemente effettuato del tuo portafoglio dovrebbe essere sostituito con il nuovo file criptato generato. Per questioni di sicurezza, backup precedenti del portafoglio non criptati diverranno inutili non appena inizi ad usare il nuovo portafoglio criptato.</translation>
     </message>
@@ -228,7 +228,7 @@
     </message>
     <message>
         <source>Banned Until</source>
-        <translation>Bannato fino </translation>
+        <translation>bannato fino </translation>
     </message>
 </context>
 <context>
@@ -244,6 +244,10 @@
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Panoramica</translation>
+    </message>
+    <message>
+        <source>Node</source>
+        <translation>Nodo</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
@@ -302,12 +306,16 @@
         <translation>Cambia Password...</translation>
     </message>
     <message>
-        <source>Open &amp;URI...</source>
-        <translation>Apri &amp;URI...</translation>
+        <source>&amp;Sending addresses...</source>
+        <translation>Indirizzi di invio...</translation>
     </message>
     <message>
-        <source>Wallet:</source>
-        <translation>Portafoglio</translation>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Indirizzi di ricezione...</translation>
+    </message>
+    <message>
+        <source>Open &amp;URI...</source>
+        <translation>Apri &amp;URI...</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -330,8 +338,8 @@
         <translation>Reindicizzazione dei blocchi sul disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Workcoin address</source>
-        <translation>Invia monete ad un indirizzo Workcoin...</translation>
+        <source>Send coins to a WorkCoin address</source>
+        <translation>Invia monete ad un indirizzo WorkCoin...</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -354,8 +362,12 @@
         <translation>Verifica messaggio...</translation>
     </message>
     <message>
-        <source>Workcoin</source>
-        <translation>Workcoin</translation>
+        <source>WorkCoin</source>
+        <translation>WorkCoin</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Portafoglio</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -378,12 +390,12 @@
         <translation>Cripta le chiavi private che appartengono al tuo portafoglio</translation>
     </message>
     <message>
-        <source>Sign messages with your Workcoin addresses to prove you own them</source>
-        <translation>Firma messaggi con i tuoi indirizzi Workcoin per provare che li possiedi</translation>
+        <source>Sign messages with your WorkCoin addresses to prove you own them</source>
+        <translation>Firma messaggi con i tuoi indirizzi WorkCoin per provare che li possiedi</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Workcoin addresses</source>
-        <translation>Verifica messaggi per accertarti che siano firmati dagli indirizzi Workcoin specificati</translation>
+        <source>Verify messages to ensure they were signed with specified WorkCoin addresses</source>
+        <translation>Verifica messaggi per accertarti che siano firmati dagli indirizzi WorkCoin specificati</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -458,12 +470,8 @@
         <translation>Aggiornato</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Workcoin command-line options</source>
-        <translation>Mostra il %1 messaggio d'aiuto per ottenere una lista con le possibili opzioni per la riga di comando di Workcoin</translation>
-    </message>
-    <message>
-        <source>default wallet</source>
-        <translation>Portafoglio predefinito</translation>
+        <source>Show the %1 help message to get a list with possible WorkCoin command-line options</source>
+        <translation>Mostra il %1 messaggio d'aiuto per ottenere una lista con le possibili opzioni per la riga di comando di WorkCoin</translation>
     </message>
     <message>
         <source>Date: %1
@@ -504,16 +512,8 @@
         <translation>Transazione in arrivo</translation>
     </message>
     <message>
-        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation>Generazione  di chiavi HD &lt;b&gt;abilitata&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>Generazione di chiavi HD &lt;b&gt;disabilitata&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>A fatal error occurred. Workcoin can no longer continue safely and will quit.</source>
-        <translation>Si è verificato un errore fatale. Workcoin non può continuare in maniera sicura e sarà chiuso.</translation>
+        <source>A fatal error occurred. WorkCoin can no longer continue safely and will quit.</source>
+        <translation>Si è verificato un errore fatale. WorkCoin non può continuare in maniera sicura e sarà chiuso.</translation>
     </message>
 </context>
 <context>
@@ -674,6 +674,10 @@
         <translation>&amp;Indirizzo</translation>
     </message>
     <message>
+        <source>New receiving address</source>
+        <translation>Nuovo indirizzo di ricezione</translation>
+    </message>
+    <message>
         <source>New sending address</source>
         <translation>Nuovo indirizzo di invio</translation>
     </message>
@@ -686,8 +690,12 @@
         <translation>Modifica l'indirizzo di invio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Workcoin address.</source>
-        <translation>L'indirizzo inserito "%1" non è un indirizzo Workcoin valido.</translation>
+        <source>The entered address "%1" is not a valid WorkCoin address.</source>
+        <translation>L'indirizzo inserito "%1" non è un indirizzo WorkCoin valido.</translation>
+    </message>
+    <message>
+        <source>The entered address "%1" is already in the address book.</source>
+        <translation>L'indirizzo inserito "%1" è già nella rubrica.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -735,7 +743,19 @@
         <source>Command-line options</source>
         <translation>Opzioni linea di comando</translation>
     </message>
-</context>
+    <message>
+        <source>Usage:</source>
+        <translation>Utilizzo:</translation>
+    </message>
+    <message>
+        <source>command-line options</source>
+        <translation>opzioni linea di comando</translation>
+    </message>
+    <message>
+        <source>UI Options:</source>
+        <translation>Opzioni UI</translation>
+    </message>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -743,12 +763,12 @@
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Workcoin</source>
-        <translation>Workcoin</translation>
+        <source>WorkCoin</source>
+        <translation>WorkCoin</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
-        <translation>Il wallet verra' inoltre memorizzato su questa cartella.</translation>
+        <translation>Il portafoglio sara' </translation>
     </message>
     <message>
         <source>Error</source>
@@ -757,14 +777,6 @@
     </context>
 <context>
     <name>ModalOverlay</name>
-    <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the workcoin network, as detailed below.</source>
-        <translation>Le transazioni recenti potrebbero non essere ancora visibili, e quindi il saldo del wallet potrebbe essere incorretto. Questa informazione verra' corretta non appena il tuo wallet ha finito di sincronizzarsi con la rete workcoin, come specificato di seguito.</translation>
-    </message>
-    <message>
-        <source>Attempting to spend workcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Tentare di spendere workcoin che sono affetti da transazioni non ancora mostrate, non verra' accettato dal network.</translation>
-    </message>
     <message>
         <source>Number of blocks left</source>
         <translation>Numero di blocchi rimanente</translation>
@@ -803,59 +815,19 @@
         <translation>Saldo disponibile</translation>
     </message>
     <message>
-        <source>Total:</source>
-        <translation>Totale:</translation>
-    </message>
-    <message>
-        <source>Your current total balance</source>
-        <translation>Bilancio totale attuale</translation>
-    </message>
-    <message>
-        <source>Spendable:</source>
-        <translation>Spendibile:</translation>
-    </message>
-    <message>
         <source>Recent transactions</source>
         <translation>Transazioni recenti</translation>
     </message>
-    <message>
-        <source>Current total balance in watch-only addresses</source>
-        <translation>Bilancio totale attuale su indirizzi watch-only</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
-    <message>
-        <source>URI handling</source>
-        <translation>Gestione URI</translation>
-    </message>
-    <message>
-        <source>'workcoin://' is not a valid URI. Use 'workcoin:' instead.</source>
-        <translation>'workcoin://' non è un URI valido. Usa invece 'workcoin:'.</translation>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation>Indirizzo di pagamento non valido %1</translation>
-    </message>
     <message>
         <source>Payment request rejected</source>
         <translation>Richiesta di pagamento rifiutata</translation>
     </message>
     <message>
-        <source>Payment request expired.</source>
-        <translation>Richiesta di pagamento scaduta.</translation>
-    </message>
-    <message>
-        <source>Invalid payment request.</source>
-        <translation>Richiesta di pagamento non valida.</translation>
-    </message>
-    <message>
         <source>Refund from %1</source>
         <translation>Rimborso da %1</translation>
-    </message>
-    <message>
-        <source>Error communicating with %1: %2</source>
-        <translation>Errore nella comunicazione con %1: %2</translation>
     </message>
     </context>
 <context>
@@ -909,10 +881,6 @@
     <message>
         <source>Label</source>
         <translation>Etichetta</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Portafoglio</translation>
     </message>
     </context>
 <context>
@@ -979,10 +947,6 @@
     <message>
         <source>Copy change</source>
         <translation>Copia cambio</translation>
-    </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation>Richiesta di pagamento scaduta.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1083,18 +1047,11 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     </context>
 <context>
     <name>WalletModel</name>
-    <message>
-        <source>default wallet</source>
-        <translation>Portafoglio predefinito</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>WalletView</name>
     </context>

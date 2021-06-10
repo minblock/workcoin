@@ -50,10 +50,6 @@
         <translation>Elige la dirección para recibir monedas</translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
-        <translation>Escoger</translation>
-    </message>
-    <message>
         <source>Sending addresses</source>
         <translation>Envío de direcciones</translation>
     </message>
@@ -62,16 +58,12 @@
         <translation>Direcciones de recepción</translation>
     </message>
     <message>
-        <source>These are your Workcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son tus direcciones Workcoin para realizar pagos. Verifica siempre el monto y la dirección de recepción antes de enviar monedas. </translation>
+        <source>These are your WorkCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son tus direcciones WorkCoin para realizar pagos. Verifica siempre el monto y la dirección de recepción antes de enviar monedas. </translation>
     </message>
     <message>
-        <source>These are your Workcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son tus direcciones Workcoin para recibir pagos. Es recomendable usar una nueva dirección de recibo para cada transacción.</translation>
-    </message>
-    <message>
-        <source>&amp;Copy Address</source>
-        <translation>Copiar dirección</translation>
+        <source>These are your WorkCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son tus direcciones WorkCoin para recibir pagos. Es recomendable usar una nueva dirección de recibo para cada transacción.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -85,29 +77,9 @@
         <source>Export Address List</source>
         <translation>Exportar lista de direcciones</translation>
     </message>
-    <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation>Separar los archivos con comas (*.csv)</translation>
-    </message>
-    <message>
-        <source>Exporting Failed</source>
-        <translation>Error al exportar</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Tuvimos un problema al guardar la dirección en la lista %1. Intenta de Nuevo.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>AddressTableModel</name>
-    <message>
-        <source>Label</source>
-        <translation>Nombre</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Direccion</translation>
-    </message>
     <message>
         <source>(no label)</source>
         <translation>(sin etiqueta)</translation>
@@ -131,40 +103,6 @@
         <source>Repeat new passphrase</source>
         <translation>Repetir nueva frase de contraseña</translation>
     </message>
-    <message>
-        <source>Show password</source>
-        <translation>Mostrar contraseña</translation>
-    </message>
-    <message>
-        <source>Encrypt wallet</source>
-        <translation>Cifrar monedero</translation>
-    </message>
-    <message>
-        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Esta operación necesita su frase de contraseña de la billetera para desbloquearla.
-</translation>
-    </message>
-    <message>
-        <source>Unlock wallet</source>
-        <translation>Desbloquear monedero</translation>
-    </message>
-    <message>
-        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Esta operación necesita su frase de contraseña de la billetera para descifrar la billetera.
-</translation>
-    </message>
-    <message>
-        <source>Decrypt wallet</source>
-        <translation>Descifrar monedero</translation>
-    </message>
-    <message>
-        <source>Change passphrase</source>
-        <translation>Cambiar frase secreta</translation>
-    </message>
-    <message>
-        <source>Confirm wallet encryption</source>
-        <translation>Confirmar cifrado de billetera</translation>
-    </message>
     </context>
 <context>
     <name>BanTableModel</name>
@@ -178,6 +116,10 @@
     <message>
         <source>Synchronizing with network...</source>
         <translation>Sincronizando con la red...</translation>
+    </message>
+    <message>
+        <source>Node</source>
+        <translation>Nodo</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
@@ -204,12 +146,16 @@
         <translation>&amp;Opciones...</translation>
     </message>
     <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Recepción de direcciones</translation>
+    </message>
+    <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Reindexando bloques en el disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Workcoin address</source>
-        <translation>Enviar monedas a una dirección Workcoin</translation>
+        <source>Send coins to a WorkCoin address</source>
+        <translation>Enviar monedas a una dirección WorkCoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -224,8 +170,12 @@
         <translation>Abre la consola de depuración y diágnostico</translation>
     </message>
     <message>
-        <source>Workcoin</source>
-        <translation>Workcoin</translation>
+        <source>WorkCoin</source>
+        <translation>WorkCoin</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Billetera</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -248,12 +198,12 @@
         <translation>Encriptar las llaves privadas que pertenecen a tu billetera</translation>
     </message>
     <message>
-        <source>Sign messages with your Workcoin addresses to prove you own them</source>
-        <translation>Firma mensajes con tus direcciones Workcoin para probar que eres dueño de ellas</translation>
+        <source>Sign messages with your WorkCoin addresses to prove you own them</source>
+        <translation>Firma mensajes con tus direcciones WorkCoin para probar que eres dueño de ellas</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Workcoin addresses</source>
-        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones Workcoin especificas</translation>
+        <source>Verify messages to ensure they were signed with specified WorkCoin addresses</source>
+        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones WorkCoin especificas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -471,7 +421,15 @@
         <source>Command-line options</source>
         <translation>Opciones de línea de comandos</translation>
     </message>
-</context>
+    <message>
+        <source>Usage:</source>
+        <translation>Uso:</translation>
+    </message>
+    <message>
+        <source>command-line options</source>
+        <translation>opciones de línea de comandos</translation>
+    </message>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -491,8 +449,8 @@
         <translation>Usa un directorio de datos personalizado:</translation>
     </message>
     <message>
-        <source>Workcoin</source>
-        <translation>Workcoin</translation>
+        <source>WorkCoin</source>
+        <translation>WorkCoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -626,25 +584,9 @@
         <source>Copy &amp;Address</source>
         <translation>&amp;Copiar Dirección</translation>
     </message>
-    <message>
-        <source>Address</source>
-        <translation>Direccion</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Nombre</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Billetera</translation>
-    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
-    <message>
-        <source>Label</source>
-        <translation>Nombre</translation>
-    </message>
     <message>
         <source>(no label)</source>
         <translation>(sin etiqueta)</translation>
@@ -732,38 +674,15 @@
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <source>Label</source>
-        <translation>Nombre</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation>(sin etiqueta)</translation>
     </message>
     </context>
 <context>
     <name>TransactionView</name>
-    <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation>Separar los archivos con comas (*.csv)</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Nombre</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Direccion</translation>
-    </message>
-    <message>
-        <source>Exporting Failed</source>
-        <translation>Error al exportar</translation>
-    </message>
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
-    </context>
-<context>
-    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>
@@ -777,8 +696,48 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Workcoin Core</source>
-        <translation>Workcoin Core</translation>
+        <source>Options:</source>
+        <translation>Opciones:</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation>Especifique directorio de datos</translation>
+    </message>
+    <message>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation>Conecte un nodo para recuperar direcciones pares, y desconecte</translation>
+    </message>
+    <message>
+        <source>Specify your own public address</source>
+        <translation>Especifique su propia dirección pública</translation>
+    </message>
+    <message>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation>Aceptar linea de comando y comandos JSON-RPC</translation>
+    </message>
+    <message>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation>Correr en segundo plano como daemon y aceptar comandos</translation>
+    </message>
+    <message>
+        <source>WorkCoin Core</source>
+        <translation>WorkCoin Core</translation>
+    </message>
+    <message>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation>Enlazar dirección dada y siempre escuchar en ella. Usar [host]:port notación para IPv6</translation>
+    </message>
+    <message>
+        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
+        <translation>Borrar todas las transacciones de la billetera y solo recuperar aquellas partes de la cadena de bloques a través de -rescan en el inicio del sistema.</translation>
+    </message>
+    <message>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation>Ejecutar comando cuando una transacción de la billetera cambia (%s en cmd es reemplazado por TxID)</translation>
+    </message>
+    <message>
+        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
+        <translation>Fija el número de verificación de hilos de script (%u a %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</translation>
     </message>
     <message>
         <source>Information</source>

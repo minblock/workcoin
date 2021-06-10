@@ -102,6 +102,10 @@
         <translation>&amp;ภาพรวม</translation>
     </message>
     <message>
+        <source>Node</source>
+        <translation>Node/โหนด</translation>
+    </message>
+    <message>
         <source>Show general overview of wallet</source>
         <translation>แสดงภาพรวมทั่วไปของกระเป๋าเงิน</translation>
     </message>
@@ -158,6 +162,14 @@
         <translation>&amp;เปลี่ยนรหัสผ่าน...</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>&amp;ที่เก็บเงิน ที่จะส่ง workcoin</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>&amp;ที่เก็บเงิน ที่จะรับ workcoin</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>เปิด &amp;URI</translation>
     </message>
@@ -166,8 +178,8 @@
         <translation>กำลังทำดัชนี ที่เก็บบล็อก ใหม่ ในดิสก์...</translation>
     </message>
     <message>
-        <source>Send coins to a Workcoin address</source>
-        <translation>ส่ง coins ไปยัง ที่เก็บ Workcoin</translation>
+        <source>Send coins to a WorkCoin address</source>
+        <translation>ส่ง coins ไปยัง ที่เก็บ WorkCoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -190,8 +202,12 @@
         <translation>&amp;ยืนยันข้อความ...</translation>
     </message>
     <message>
-        <source>Workcoin</source>
-        <translation>Workcoin</translation>
+        <source>WorkCoin</source>
+        <translation>WorkCoin</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>กระเป๋าเงิน</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -214,12 +230,12 @@
         <translation>เข้ารหัส private keys/ รหัสส่วนตัว สำหรับกระเป๋าเงินของท่าน</translation>
     </message>
     <message>
-        <source>Sign messages with your Workcoin addresses to prove you own them</source>
-        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Workcoin เพื่อแสดงว่าท่านเป็นเจ้าของ workcoin นี้จริง</translation>
+        <source>Sign messages with your WorkCoin addresses to prove you own them</source>
+        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ WorkCoin เพื่อแสดงว่าท่านเป็นเจ้าของ workcoin นี้จริง</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Workcoin addresses</source>
-        <translation>ตรวจสอบ ข้อความ เพื่อให้แน่ใจว่า การเซ็นต์ชื่อ ด้วยที่เก็บ Workcoin แล้ว</translation>
+        <source>Verify messages to ensure they were signed with specified WorkCoin addresses</source>
+        <translation>ตรวจสอบ ข้อความ เพื่อให้แน่ใจว่า การเซ็นต์ชื่อ ด้วยที่เก็บ WorkCoin แล้ว</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -258,8 +274,8 @@
         <translation>&amp;ตัวเลือก Command-line</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Workcoin network</source>
-        <translation><numerusform>%n ช่องการเชื่อมต่อที่ใช้งานได้ เพื่อเชื่อมกับเครือข่าย Workcoin</numerusform></translation>
+        <source>%n active connection(s) to WorkCoin network</source>
+        <translation><numerusform>%n ช่องการเชื่อมต่อที่ใช้งานได้ เพื่อเชื่อมกับเครือข่าย WorkCoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -302,12 +318,8 @@
         <translation>ทันสมัย</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Workcoin command-line options</source>
-        <translation>แสดง %1 ข้อความช่วยเหลือ เพื่อแสดงรายการ ตัวเลือกที่เป็นไปได้สำหรับ Workcoin command-line</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>&amp;วันโดว์</translation>
+        <source>Show the %1 help message to get a list with possible WorkCoin command-line options</source>
+        <translation>แสดง %1 ข้อความช่วยเหลือ เพื่อแสดงรายการ ตัวเลือกที่เป็นไปได้สำหรับ WorkCoin command-line</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -499,6 +511,42 @@
         <source>Command-line options</source>
         <translation>ตัวเลือก Command-line</translation>
     </message>
+    <message>
+        <source>Usage:</source>
+        <translation>วิธีใช้งาน:</translation>
+    </message>
+    <message>
+        <source>command-line options</source>
+        <translation>ตัวเลือก command-line</translation>
+    </message>
+    <message>
+        <source>UI Options:</source>
+        <translation>ตัวเลือก UI:</translation>
+    </message>
+    <message>
+        <source>Choose data directory on startup (default: %u)</source>
+        <translation>เลือกไดเร็กทอรี่ข้อมูลตั้งแต่เริ่มต้นสตาร์ทอัพ (ค่าเริ่มต้น: %u)</translation>
+    </message>
+    <message>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>ตั้งค่าภาษา ยกตัวอย่าง "de_DE" (ค่าเริ่มต้น: ภาษาท้องถิ่นของระบบ)</translation>
+    </message>
+    <message>
+        <source>Start minimized</source>
+        <translation>เริ่มต้นมินิไมซ์</translation>
+    </message>
+    <message>
+        <source>Set SSL root certificates for payment request (default: -system-)</source>
+        <translation>ตั้งค่า SSL root certificates สำหรับเรียกการชำระเงิน (ค่าเริ่มต้น: -system-)</translation>
+    </message>
+    <message>
+        <source>Show splash screen on startup (default: %u)</source>
+        <translation>แสดง splash screen ตอนเริ่มต้น (ค่าเริ่มต้น: %u)</translation>
+    </message>
+    <message>
+        <source>Reset all settings changed in the GUI</source>
+        <translation>รีเซตการเปลี่ยนการตั้งค่าทั้งหมดใน GUI</translation>
+    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -523,8 +571,8 @@
         <translation>ใช้ไดเร็กทอรี่ข้อมูลที่ตั้งค่าเอง:</translation>
     </message>
     <message>
-        <source>Workcoin</source>
-        <translation>Workcoin</translation>
+        <source>WorkCoin</source>
+        <translation>WorkCoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -592,6 +640,10 @@
         <translation>ขนาดของ &amp;database cache</translation>
     </message>
     <message>
+        <source>MB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>จำนวนของสคริปท์ &amp;verification threads</translation>
     </message>
@@ -606,6 +658,10 @@
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>URL แบบอื่น (ยกตัวอย่าง เอ็กพลอเลอร์บล็อก) ที่อยู่ใน เมนูรายการ ลำดับ %s ใน URL จะถูกเปลี่ยนด้วย รายการแฮช URL ที่เป็นแบบหลายๆอัน จะถูกแยก โดย เครื่องหมายเส้นบาร์ตั้ง |</translation>
+    </message>
+    <message>
+        <source>Active command-line options that override above options:</source>
+        <translation>ตัวเลือก command-line แอกทีฟอยู่นี้ จะแทนที่ ตัวเลือกด้านบนนี้:</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -644,16 +700,16 @@
         <translation>&amp;ใช้เงินทอนที่ยังไม่ยืนยัน</translation>
     </message>
     <message>
-        <source>Automatically open the Workcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>เปิด Workcoin ไคล์เอ็นท์พอร์ต/client port บน router โดยอัตโนมัติ วิธีนี้ใช้ได้เมื่อ router สนับสนุน UPnP และสถานะเปิดใช้งาน</translation>
+        <source>Automatically open the WorkCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>เปิด WorkCoin ไคล์เอ็นท์พอร์ต/client port บน router โดยอัตโนมัติ วิธีนี้ใช้ได้เมื่อ router สนับสนุน UPnP และสถานะเปิดใช้งาน</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>จองพอร์ต โดยใช้ &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Workcoin network through a SOCKS5 proxy.</source>
-        <translation>เชื่อมต่อกับ Workcoin เน็ตเวิร์ก ผ่านพร็อกซี่แบบ SOCKS5</translation>
+        <source>Connect to the WorkCoin network through a SOCKS5 proxy.</source>
+        <translation>เชื่อมต่อกับ WorkCoin เน็ตเวิร์ก ผ่านพร็อกซี่แบบ SOCKS5</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -688,8 +744,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Workcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>เชื่อมต่อกับ เครือข่าย Workcoin ผ่านทาง พร้อกซี่ SOCKS5 แยกต่างหาก สำหรับ Tor เซอร์วิส</translation>
+        <source>Connect to the WorkCoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>เชื่อมต่อกับ เครือข่าย WorkCoin ผ่านทาง พร้อกซี่ SOCKS5 แยกต่างหาก สำหรับ Tor เซอร์วิส</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -746,10 +802,6 @@
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
-    <message>
-        <source>Wallet</source>
-        <translation>กระเป๋าเงิน</translation>
-    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -831,9 +883,6 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -844,6 +893,10 @@
     </context>
 <context>
     <name>bitcoin-core</name>
+    <message>
+        <source>Options:</source>
+        <translation>ตัวเลือก:</translation>
+    </message>
     <message>
         <source>Information</source>
         <translation>ข้อมูล</translation>

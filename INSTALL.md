@@ -1,5 +1,5 @@
-Building Workcoin
+Building WorkCoin
 ================
 
 See doc/build-*.md for instructions on building the various
-elements of the Workcoin Core reference implementation of Workcoin.
+elements of the WorkCoin Core reference implementation of WorkCoin.

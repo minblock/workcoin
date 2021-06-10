@@ -42,12 +42,12 @@
         <translation>Recebendo informações</translation>
     </message>
     <message>
-        <source>These are your Workcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas são suas informações para o envio de pagamentos por Workcoins. Sempre cheque a quantia enviada e as informações do destinatário, antes de enviar os Workcoins.</translation>
+        <source>These are your WorkCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas são suas informações para o envio de pagamentos por WorkCoins. Sempre cheque a quantia enviada e as informações do destinatário, antes de enviar os WorkCoins.</translation>
     </message>
     <message>
-        <source>These are your Workcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas são suas informações para o recebimento de pagamentos por Workcoins. É recomendado que seja feito o uso de um novo conjunto de informações para cada transação.</translation>
+        <source>These are your WorkCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas são suas informações para o recebimento de pagamentos por WorkCoins. É recomendado que seja feito o uso de um novo conjunto de informações para cada transação.</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -292,9 +292,6 @@ Por favor, utilize uma senha com dez ou mais caracteres, ou com oito ou mais pal
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
-    </context>
-<context>
-    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>
