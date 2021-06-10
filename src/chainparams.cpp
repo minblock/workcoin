@@ -296,11 +296,11 @@ public:
         m_assumed_chain_state_size = 0;
 
         UpdateVersionBitsParametersFromArgs(args);
-
-        genesis = CreateGenesisBlock(1296688602, 2, 0x207fffff, 1, 50 * COIN);
+  
+        genesis = CreateGenesisBlock(1296688602, 3, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0xe359cc2e41947f32ed77dbf8ca96a1f59c3bc42b3839004fe019d32f44451d13"));
-        assert(genesis.hashMerkleRoot == uint256S("0x9e3126f59fab688728a8edcc4e3ca2600b232eaa9e036338d7e7765c9a28dcf5"));
+        assert(consensus.hashGenesisBlock == uint256S("0x7e0b1d756b1b8c26d3fb67544c852879b4510304f2b7a7c91441a5c5bec881a4"));
+        assert(genesis.hashMerkleRoot == uint256S("0x058982f88717cfc1a09905f3d3ad6e43c745ab84e46d764472f5fae79d9de8ee"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
