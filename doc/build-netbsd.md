@@ -25,7 +25,7 @@ python27
 
 Download the source code:
 ```
-git clone https://github.com/workcoin-project/workcoin
+git clone https://github.com/minblock/workcoin
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.

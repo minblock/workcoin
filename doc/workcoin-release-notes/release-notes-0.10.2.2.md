@@ -7,7 +7,7 @@ updates. It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/workcoin-project/workcoin/issues>
+  <https://github.com/minblock/workcoin/issues>
 
 Upgrading and downgrading
 =========================

@@ -49,7 +49,7 @@ Build WorkCoin Core
 
 1. Clone the workcoin source code and cd into `workcoin`
 
-        git clone https://github.com/workcoin-project/workcoin
+        git clone https://github.com/minblock/workcoin
         cd workcoin
 
 2.  Build workcoin-core:
