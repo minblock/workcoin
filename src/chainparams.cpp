@@ -122,7 +122,6 @@ public:
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
         vSeeds.emplace_back("seed.provgn.com");
-        vSeeds.emplace_back("seed.pgn.one");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,44); //Legacy wallet addressing will begin with J or K
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,73); //Segwitaddresses will begin with W
@@ -215,8 +214,7 @@ public:
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
         vSeeds.emplace_back("testnet-seed.workcointools.com");
-        vSeeds.emplace_back("seed-b.workcoin.loshan.co.uk");
-        vSeeds.emplace_back("dnsseed-testnet.thrasher.io");
+
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
