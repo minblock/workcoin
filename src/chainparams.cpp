@@ -66,7 +66,7 @@ public:
         consensus.nSubsidyHalvingInterval = 840000;
         consensus.BIP16Height = 0; //  lastsaturdaytuesdaytoday
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("9b164af3e5b26c1dd9795aeb4b870139aad55b8de4d4d37757707cd68072f055");
+        consensus.BIP34Hash = uint256S("1b69a4635f912f204334974ef5e4e71ad9fedce3acca1ad989868b54a830b7f5"); //02hoursago
         consensus.BIP65Height = 0; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a
         consensus.BIP66Height = 0; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
@@ -111,10 +111,10 @@ public:
         m_assumed_blockchain_size = 0;
         m_assumed_chain_state_size = 0;
 
-        genesis = CreateGenesisBlock(1622916046, 2133186, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1623355948, 271013, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x9b164af3e5b26c1dd9795aeb4b870139aad55b8de4d4d37757707cd68072f055"));
-        assert(genesis.hashMerkleRoot == uint256S("0x9e3126f59fab688728a8edcc4e3ca2600b232eaa9e036338d7e7765c9a28dcf5"));
+        assert(consensus.hashGenesisBlock == uint256S("0x1b69a4635f912f204334974ef5e4e71ad9fedce3acca1ad989868b54a830b7f5"));
+        assert(genesis.hashMerkleRoot == uint256S("0x058982f88717cfc1a09905f3d3ad6e43c745ab84e46d764472f5fae79d9de8ee"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -140,14 +140,14 @@ public:
 
         checkpointData = {
             {
-                {  0, uint256S("0x9b164af3e5b26c1dd9795aeb4b870139aad55b8de4d4d37757707cd68072f055")},
+                {  0, uint256S("0x1b69a4635f912f204334974ef5e4e71ad9fedce3acca1ad989868b54a830b7f5")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data from rpc: getchaintxstats 4096 2cdba8c47858d34cf0e02dfb8733263a3ed8705b1663ec7c158783d77b93e7ee
-            /* nTime    */ 1565379143,
-            /* nTxCount */ 36299075,
+            /* nTime    */ 1623355948,
+            /* nTxCount */ 0,
             /* dTxRate  */ 0.388813310286546
         };
 
