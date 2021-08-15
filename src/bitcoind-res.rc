@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Workcoin"
-            VALUE "FileDescription",    "workcoind (Workcoin node with a JSON-RPC server)"
+            VALUE "CompanyName",        "WorkCoin"
+            VALUE "FileDescription",    "workcoind (WorkCoin node with a JSON-RPC server)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "workcoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR

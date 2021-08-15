@@ -19,8 +19,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Workcoin"
-            VALUE "FileDescription",    PACKAGE_NAME " (GUI node for Workcoin)"
+            VALUE "CompanyName",        "WorkCoin"
+            VALUE "FileDescription",    PACKAGE_NAME " (GUI node for WorkCoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "workcoin-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR

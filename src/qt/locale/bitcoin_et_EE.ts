@@ -130,8 +130,12 @@
         <translation>Kõvakettal olevate plokkide reindekseerimine...</translation>
     </message>
     <message>
-        <source>Workcoin</source>
-        <translation>Workcoin</translation>
+        <source>WorkCoin</source>
+        <translation>WorkCoin</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Rahakott</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -253,7 +257,15 @@
         <source>Command-line options</source>
         <translation>Käsurea valikud</translation>
     </message>
-</context>
+    <message>
+        <source>Usage:</source>
+        <translation>Kasutus:</translation>
+    </message>
+    <message>
+        <source>command-line options</source>
+        <translation>käsurea valikud</translation>
+    </message>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -261,8 +273,8 @@
         <translation>Tere tulemast</translation>
     </message>
     <message>
-        <source>Workcoin</source>
-        <translation>Workcoin</translation>
+        <source>WorkCoin</source>
+        <translation>WorkCoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -280,6 +292,10 @@
     <message>
         <source>Options</source>
         <translation>Valikud</translation>
+    </message>
+    <message>
+        <source>MB</source>
+        <translation>MB</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -491,10 +507,6 @@
     <message>
         <source>Message</source>
         <translation>Sõnum</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Rahakott</translation>
     </message>
     </context>
 <context>
@@ -729,9 +741,6 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -755,8 +764,12 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Workcoin Core</source>
-        <translation>Workcoin Core</translation>
+        <source>Options:</source>
+        <translation>Valikud:</translation>
+    </message>
+    <message>
+        <source>WorkCoin Core</source>
+        <translation>WorkCoin Core</translation>
     </message>
     <message>
         <source>Information</source>
