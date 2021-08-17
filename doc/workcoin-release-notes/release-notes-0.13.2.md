@@ -1,4 +1,4 @@
-WorkCoin Core version 0.13.2 is now available from:
+Workcoin Core version 0.13.2 is now available from:
 
   <https://download.workcoin.org/workcoin-0.13.2.1/>
 
@@ -7,7 +7,7 @@ It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/minblock/workcoin/issues>
+  <https://github.com/workcoin-project/workcoin/issues>
 
 Compatibility
 ==============
@@ -41,7 +41,7 @@ Notable changes
 Signature validation using libsecp256k1
 ---------------------------------------
 
-ECDSA signatures inside WorkCoin transactions now use validation using
+ECDSA signatures inside Workcoin transactions now use validation using
 [libsecp256k1](https://github.com/bitcoin-core/secp256k1) instead of OpenSSL.
 
 Depending on the platform, this means a significant speedup for raw signature
@@ -88,15 +88,15 @@ can often prevent an extra roundtrip before the actual block is downloaded.
 Memory pool limiting
 --------------------
 
-Previous versions of WorkCoin Core had their mempool limited by checking
+Previous versions of Workcoin Core had their mempool limited by checking
 a transaction's fees against the node's minimum relay fee. There was no
 upper bound on the size of the mempool and attackers could send a large
 number of transactions paying just slighly more than the default minimum
 relay fee to crash nodes with relatively low RAM. A temporary workaround
-for previous versions of WorkCoin Core was to raise the default minimum
+for previous versions of Workcoin Core was to raise the default minimum
 relay fee.
 
-WorkCoin Core 0.13.2 will have a strict maximum size on the mempool. The
+Workcoin Core 0.13.2 will have a strict maximum size on the mempool. The
 default value is 300 MB and can be configured with the `-maxmempool`
 parameter. Whenever a transaction would cause the mempool to exceed
 its maximum size, the transaction that (along with in-mempool descendants) has
@@ -105,7 +105,7 @@ minimum relay feerate will be increased to match this feerate plus the initial
 minimum relay feerate. The initial minimum relay feerate is set to
 1000 satoshis per kB.
 
-WorkCoin Core 0.13.2 also introduces new default policy limits on the length and
+Workcoin Core 0.13.2 also introduces new default policy limits on the length and
 size of unconfirmed transaction chains that are allowed in the mempool
 (generally limiting the length of unconfirmed chains to 25 transactions, with a
 total size of 101 KB).  These limits can be overriden using command line
@@ -147,10 +147,10 @@ returned (previously all relevant hashes were returned).
 Relay and Mining: Priority transactions
 ---------------------------------------
 
-WorkCoin Core has a heuristic 'priority' based on coin value and age. This
+Workcoin Core has a heuristic 'priority' based on coin value and age. This
 calculation is used for relaying of transactions which do not pay the
 minimum relay fee, and can be used as an alternative way of sorting
-transactions for mined blocks. WorkCoin Core will relay transactions with
+transactions for mined blocks. Workcoin Core will relay transactions with
 insufficient fees depending on the setting of `-limitfreerelay=<r>` (default:
 `r=15` kB per minute) and `-blockprioritysize=<s>`.
 
@@ -175,7 +175,7 @@ Note, however, that if mining priority transactions is left disabled, the
 priority delta will be ignored and only the fee metric will be effective.
 
 This internal automatic prioritization handling is being considered for removal
-entirely in WorkCoin Core 0.13, and it is at this time undecided whether the
+entirely in Workcoin Core 0.13, and it is at this time undecided whether the
 more accurate priority calculation for chained unconfirmed transactions will be
 restored. Community direction on this topic is particularly requested to help
 set project priorities.
@@ -185,15 +185,15 @@ Automatically use Tor hidden services
 
 Starting with Tor version 0.2.7.1 it is possible, through Tor's control socket
 API, to create and destroy 'ephemeral' hidden services programmatically.
-WorkCoin Core has been updated to make use of this.
+Workcoin Core has been updated to make use of this.
 
 This means that if Tor is running (and proper authorization is available),
-WorkCoin Core automatically creates a hidden service to listen on, without
-manual configuration. WorkCoin Core will also use Tor automatically to connect
+Workcoin Core automatically creates a hidden service to listen on, without
+manual configuration. Workcoin Core will also use Tor automatically to connect
 to other .onion nodes if the control socket can be successfully opened. This
 will positively affect the number of available .onion nodes and their usage.
 
-This new feature is enabled by default if WorkCoin Core is listening, and
+This new feature is enabled by default if Workcoin Core is listening, and
 a connection to Tor can be made. It can be configured with the `-listenonion`,
 `-torcontrol` and `-torpassword` settings. To show verbose debugging
 information, pass `-debug=tor`.
@@ -201,7 +201,7 @@ information, pass `-debug=tor`.
 Notifications through ZMQ
 -------------------------
 
-WorkCoind can now (optionally) asynchronously notify clients through a
+Workcoind can now (optionally) asynchronously notify clients through a
 ZMQ-based PUB socket of the arrival of new transactions and blocks.
 This feature requires installation of the ZMQ C API library 4.x and
 configuring its use through the command line or configuration file.
@@ -214,8 +214,8 @@ Various improvements have been made to how the wallet calculates
 transaction fees.
 
 Users can decide to pay a predefined fee rate by setting `-paytxfee=<n>`
-(or `settxfee <n>` rpc during runtime). A value of `n=0` signals WorkCoin
-Core to use floating fees. By default, WorkCoin Core will use floating
+(or `settxfee <n>` rpc during runtime). A value of `n=0` signals Workcoin
+Core to use floating fees. By default, Workcoin Core will use floating
 fees.
 
 Based on past transaction data, floating fees approximate the fees
@@ -226,9 +226,9 @@ Sometimes, it is not possible to give good estimates, or an estimate
 at all. Therefore, a fallback value can be set with `-fallbackfee=<f>`
 (default: `0.0002` WOK/kB).
 
-At all times, WorkCoin Core will cap fees at `-maxtxfee=<x>` (default:
+At all times, Workcoin Core will cap fees at `-maxtxfee=<x>` (default:
 0.10) WOK.
-Furthermore, WorkCoin Core will never create transactions paying less than
+Furthermore, Workcoin Core will never create transactions paying less than
 the current minimum relay fee.
 Finally, a user can set the minimum fee rate for all transactions with
 `-mintxfee=<i>`, which defaults to 1000 satoshis per kB.
@@ -361,9 +361,9 @@ arbitrary TCP connections inside SSL. On e.g. Ubuntu it can be installed with:
 
     sudo apt-get install stunnel4
 
-Then, to tunnel a SSL connection on 213840 to a RPC server bound on localhost on port 19334 do:
+Then, to tunnel a SSL connection on 29332 to a RPC server bound on localhost on port 19334 do:
 
-    stunnel -d 213840 -r 127.0.0.1:19334 -p stunnel.pem -P ''
+    stunnel -d 29332 -r 127.0.0.1:19334 -p stunnel.pem -P ''
 
 It can also be set up system-wide in inetd style.
 
@@ -381,8 +381,8 @@ caching. A sample config for apache2 could look like:
     SSLCertificateKeyFile /etc/apache2/ssl/server.key
 
     <Location /workcoinrpc>
-        ProxyPass http://127.0.0.1:13840/
-        ProxyPassReverse http://127.0.0.1:13840/
+        ProxyPass http://127.0.0.1:9332/
+        ProxyPassReverse http://127.0.0.1:9332/
         # optional enable digest auth
         # AuthType Digest
         # ...
@@ -443,7 +443,7 @@ table by any user on the system.
 C++11 and Python 3
 ------------------
 
-Various code modernizations have been done. The WorkCoin Core code base has
+Various code modernizations have been done. The Workcoin Core code base has
 started using C++11. This means that a C++11-capable compiler is now needed for
 building. Effectively this means GCC 4.7 or higher, or Clang 3.3 or higher.
 
@@ -489,7 +489,7 @@ BIP112 soft fork to enforce OP_CHECKSEQUENCEVERIFY
 --------------------------------------------------
 
 [BIP112][] redefines the existing OP_NOP3 as OP_CHECKSEQUENCEVERIFY (CSV)
-for a new opcode in the WorkCoin scripting system that in combination with
+for a new opcode in the Workcoin scripting system that in combination with
 [BIP68][] allows execution pathways of a script to be restricted based
 on the age of the output being spent.
 
@@ -502,7 +502,7 @@ BIP113 locktime enforcement soft fork
 This release seeks to make mempool-only locktime enforcement using GetMedianTimePast() 
 a consensus rule.
 
-WorkCoin transactions currently may specify a locktime indicating when
+Workcoin transactions currently may specify a locktime indicating when
 they may be added to a valid block.  Current consensus rules require
 that blocks have a block header time greater than the locktime specified
 in any transaction in that block.
@@ -592,7 +592,7 @@ You can't disable HD key generation once you have created a HD wallet.
 
 There is no distinction between internal (change) and external keys.
 
-HD wallets are incompatible with older versions of WorkCoin Core.
+HD wallets are incompatible with older versions of Workcoin Core.
 
 [Pull request](https://github.com/bitcoin/bitcoin/pull/8035/files), [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
 
@@ -645,7 +645,7 @@ files on disk. These two have now been split up, so that all blocks are known
 before validation starts. This was necessary to make certain optimizations that
 are available during normal synchronizations also available during reindexing.
 
-The two phases are distinct in the WorkCoin-Qt GUI. During the first one,
+The two phases are distinct in the Workcoin-Qt GUI. During the first one,
 "Reindexing blocks on disk" is shown. During the second (slower) one,
 "Processing blocks on disk" is shown.
 
@@ -786,9 +786,9 @@ covered by the txid. This provides several immediate benefits:
   identifier (txid) of transactions without referencing the witness, which can
   sometimes be changed by third-parties (such as miners) or by co-signers in a
   multisig spend. This solves all known cases of unwanted transaction
-  malleability, which is a problem that makes programming WorkCoin wallet
+  malleability, which is a problem that makes programming Workcoin wallet
   software more difficult and which seriously complicates the design of smart
-  contracts for WorkCoin.
+  contracts for Workcoin.
 
 - **Capacity increase:** Segwit transactions contain new fields that are not
   part of the data currently used to calculate the size of a block, which
@@ -802,7 +802,7 @@ covered by the txid. This provides several immediate benefits:
   following section for details).
 
 - **Weighting data based on how it affects node performance:** Some parts of
-  each WorkCoin block need to be stored by nodes in order to validate future
+  each Workcoin block need to be stored by nodes in order to validate future
   blocks; other parts of a block can be immediately forgotten (pruned) or used
   only for helping other nodes sync their copy of the block chain.  One large
   part of the immediately prunable data are transaction signatures (witnesses),
@@ -835,7 +835,7 @@ covered by the txid. This provides several immediate benefits:
   different signature method that doesn't suffer from this problem and doesn't
   have any unwanted side-effects.
 
-- **Increased security for multisig:** WorkCoin addresses (both P2PKH addresses
+- **Increased security for multisig:** Workcoin addresses (both P2PKH addresses
   that start with a '1' and P2SH addresses that start with a '3' or 'M') use a hash
   function known as RIPEMD-160.  For P2PKH addresses, this provides about 160
   bits of security---which is beyond what cryptographers believe can be broken
@@ -845,7 +845,7 @@ covered by the txid. This provides several immediate benefits:
   Segwit allows advanced transactions to use the SHA256 hash function instead,
   which provides about 128 bits of security  (that is 281 trillion times as
   much security as 80 bits and is equivalent to the maximum bits of security
-  believed to be provided by WorkCoin's choice of parameters for its Elliptic
+  believed to be provided by Workcoin's choice of parameters for its Elliptic
   Curve Digital Security Algorithm [ECDSA].)
 
 - **More efficient almost-full-node security** Satoshi Nakamoto's original
@@ -853,7 +853,7 @@ covered by the txid. This provides several immediate benefits:
   skip downloading and validating some data from historic blocks that are
   protected by large amounts of proof of work.  Unfortunately, Nakamoto's
   method can't guarantee that a newly-started node using this method will
-  produce an accurate copy of WorkCoin's current ledger (called the UTXO set),
+  produce an accurate copy of Workcoin's current ledger (called the UTXO set),
   making the node vulnerable to falling out of consensus with other nodes.
   Although the problems with Nakamoto's method can't be fixed in a soft fork,
   Segwit accomplishes something similar to his original proposal: it makes it
@@ -861,13 +861,13 @@ covered by the txid. This provides several immediate benefits:
   (specifically, the segregated witnesses) while still ensuring that the node
   can build an accurate copy of the UTXO set for the block chain with the most
   proof of work.  Segwit enables this capability at the consensus layer, but
-  note that WorkCoin Core does not provide an option to use this capability as
+  note that Workcoin Core does not provide an option to use this capability as
   of this 0.13.2 release.
 
 - **Script versioning:** Segwit makes it easy for future soft forks to allow
-  WorkCoin users to individually opt-in to almost any change in the WorkCoin
+  Workcoin users to individually opt-in to almost any change in the Workcoin
   Script language when those users receive new transactions.  Features
-  currently being researched by Bitcoin and WorkCoin Core contributors that may
+  currently being researched by Bitcoin and Workcoin Core contributors that may
   use this capability include support for Schnorr signatures, which can improve
   the privacy and efficiency of multisig transactions (or transactions with
   multiple inputs), and Merklized Abstract Syntax Trees (MAST), which can
@@ -877,8 +877,8 @@ covered by the txid. This provides several immediate benefits:
 
 Activation for the segwit soft fork is being managed using
 BIP9. At the beginning of the first retarget period after
-segwit's start date of 1 January 2017 miners can update the WorkCoin
-client to WorkCoin Core 0.13.2 to signal for segwit support. When a
+segwit's start date of 1 January 2017 miners can update the Workcoin
+client to Workcoin Core 0.13.2 to signal for segwit support. When a
 super-majority of 75% is reached segwit is activated by optional, and
 if 75% of blocks within a 8,064-block retarget period (about 3.5 days)
 signal support for segwit, after another 8,064 blocks, segwit will
@@ -911,7 +911,7 @@ a third-party to insert data into other people's transactions, changing
 the transaction's txid (called transaction malleability) and possibly
 causing other problems.
 
-Since WorkCoin Core 0.10.0, nodes have defaulted to only relaying and
+Since Workcoin Core 0.10.0, nodes have defaulted to only relaying and
 mining transactions whose dummy element was a null value (0x00, also
 called OP_0).  The null dummy soft fork turns this relay rule into a
 consensus rule both for non-segwit transactions and segwit transactions,

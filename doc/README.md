@@ -1,15 +1,15 @@
-WorkCoin Core
-=============
+Workcoin Core 0.14.2
+=====================
 
 Setup
 ---------------------
-WorkCoin Core is the original WorkCoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of WorkCoin transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Workcoin Core is the original Workcoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Workcoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download WorkCoin Core, visit [workcoin.org](https://workcoin.org).
+To download Workcoin Core, visit [workcoin.org](https://workcoin.org).
 
 Running
 ---------------------
-The following are some helpful notes on how to run WorkCoin on your native platform.
+The following are some helpful notes on how to run Workcoin on your native platform.
 
 ### Unix
 
@@ -24,20 +24,19 @@ Unpack the files into a directory, and then run workcoin-qt.exe.
 
 ### OS X
 
-Drag WorkCoin-Core to your applications folder, and then run WorkCoin-Core.
+Drag Workcoin-Core to your applications folder, and then run Workcoin-Core.
 
 ### Need Help?
 
-* See the documentation at the [WorkCoin Wiki](https://workcoin.info/)
+* See the documentation at the [Workcoin Wiki](https://workcoin.info/)
 for help and more information.
 * Ask for help on [#workcoin](http://webchat.freenode.net?channels=workcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=workcoin).
-* Ask for help on the [WorkCoinTalk](https://workcointalk.io/) forums.
+* Ask for help on the [WorkcoinTalk](https://workcointalk.io/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build WorkCoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Workcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
-- [Dependencies](dependencies.md)
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
 - [Windows Build Notes](build-windows.md)
@@ -46,11 +45,12 @@ The following are developer notes on how to build WorkCoin on your native platfo
 
 Development
 ---------------------
-The WorkCoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Workcoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/workcoin/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -61,8 +61,8 @@ The WorkCoin repo's [root README](/README.md) contains relevant information on t
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [WorkCoinTalk](https://workcointalk.io/) forums.
-* Discuss general WorkCoin development on #workcoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=workcoin-dev).
+* Discuss on the [WorkcoinTalk](https://workcointalk.io/) forums.
+* Discuss general Workcoin development on #workcoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=workcoin-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

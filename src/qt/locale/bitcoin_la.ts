@@ -114,8 +114,8 @@
         <translation>Recreans indicem frustorum in disco...</translation>
     </message>
     <message>
-        <source>Send coins to a WorkCoin address</source>
-        <translation>Mitte nummos ad inscriptionem WorkCoin</translation>
+        <source>Send coins to a Workcoin address</source>
+        <translation>Mitte nummos ad inscriptionem Workcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -138,8 +138,8 @@
         <translation>&amp;Verifica nuntium...</translation>
     </message>
     <message>
-        <source>WorkCoin</source>
-        <translation>WorkCoin</translation>
+        <source>Workcoin</source>
+        <translation>Workcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -166,12 +166,12 @@
         <translation>Cifra claves privatas quae cassidili tui sunt</translation>
     </message>
     <message>
-        <source>Sign messages with your WorkCoin addresses to prove you own them</source>
-        <translation>Signa nuntios cum tuis inscriptionibus WorkCoin ut demonstres te eas possidere</translation>
+        <source>Sign messages with your Workcoin addresses to prove you own them</source>
+        <translation>Signa nuntios cum tuis inscriptionibus Workcoin ut demonstres te eas possidere</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified WorkCoin addresses</source>
-        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus WorkCoin</translation>
+        <source>Verify messages to ensure they were signed with specified Workcoin addresses</source>
+        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Workcoin</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -301,10 +301,6 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>WorkCoin</source>
-        <translation>WorkCoin</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -350,8 +346,8 @@
         <translation>Cassidile</translation>
     </message>
     <message>
-        <source>Automatically open the WorkCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aperi per se portam clientis WorkCoin in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
+        <source>Automatically open the Workcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aperi per se portam clientis Workcoin in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -418,10 +414,6 @@
         <translation>Confirma optionum reconstituere</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
-    <message>
         <source>The supplied proxy address is invalid.</source>
         <translation>Inscriptio vicarii tradita non valida est.</translation>
     </message>
@@ -433,8 +425,8 @@
         <translation>Schema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WorkCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete WorkCoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Workcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Workcoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -461,11 +453,7 @@
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
-    <message>
-        <source>unknown</source>
-        <translation>ignotum</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -529,6 +517,14 @@
     <message>
         <source>Clear console</source>
         <translation>Vacuefac terminale</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation>Utere sagittis sursum deorsumque ut per historiam naviges, et &lt;b&gt;Ctrl+L&lt;/b&gt; ut scrinium vacuefacias.</translation>
+    </message>
+    <message>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Scribe &lt;b&gt;help&lt;/b&gt; pro summario possibilium mandatorum.</translation>
     </message>
     </context>
 <context>
@@ -675,8 +671,8 @@
         <translation>Copia signationem in latibulum systematis</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this WorkCoin address</source>
-        <translation>Signa nuntium ut demonstres hanc inscriptionem WorkCoin a te possessa esse</translation>
+        <source>Sign the message to prove you own this Workcoin address</source>
+        <translation>Signa nuntium ut demonstres hanc inscriptionem Workcoin a te possessa esse</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -695,8 +691,8 @@
         <translation>&amp;Verifica Nuntium</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified WorkCoin address</source>
-        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione WorkCoin</translation>
+        <source>Verify the message to ensure it was signed with the specified Workcoin address</source>
+        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Workcoin</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -772,8 +768,8 @@
         <translation>Operare infere sicut daemon et mandata accipe</translation>
     </message>
     <message>
-        <source>WorkCoin Core</source>
-        <translation>WorkCoin Nucleus</translation>
+        <source>Workcoin Core</source>
+        <translation>Workcoin Nucleus</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -782,10 +778,6 @@
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Facere mandatum quotiescumque cassidilis transactio mutet (%s in mandato sbstituitur ab TxID)</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Accipe conexiones externas (praedefinitum: 1 nisi -proxy neque -connect)</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -832,6 +824,10 @@
         <translation>Verificante frusta...</translation>
     </message>
     <message>
+        <source>Verifying wallet...</source>
+        <translation>Verificante cassidilem...</translation>
+    </message>
+    <message>
         <source>Information</source>
         <translation>Informatio</translation>
     </message>
@@ -876,6 +872,14 @@
         <translation>Permitte quaerenda DNS pro -addnode, -seednode, et -connect</translation>
     </message>
     <message>
+        <source>Loading addresses...</source>
+        <translation>Legens inscriptiones...</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Inscriptio -proxy non valida: '%s'</translation>
+    </message>
+    <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Ignotum rete specificatum in -onlynet: '%s'</translation>
     </message>
@@ -888,12 +892,20 @@
         <translation>Legens indicem frustorum...</translation>
     </message>
     <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation>Adice nodum cui conectere et conare sustinere conexionem apertam</translation>
+    </message>
+    <message>
         <source>Loading wallet...</source>
         <translation>Legens cassidile...</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
         <translation>Non posse cassidile regredi</translation>
+    </message>
+    <message>
+        <source>Cannot write default address</source>
+        <translation>Non posse scribere praedefinitam inscriptionem</translation>
     </message>
     <message>
         <source>Rescanning...</source>

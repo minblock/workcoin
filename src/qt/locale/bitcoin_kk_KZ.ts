@@ -70,7 +70,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>WorkCoin</source>
+        <source>Workcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -169,10 +169,6 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>WorkCoin</source>
-        <translation>Биткоин</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>қате</translation>
     </message>
@@ -188,10 +184,6 @@
     <message>
         <source>W&amp;allet</source>
         <translation>Әмиян</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>қате</translation>
     </message>
     </context>
 <context>

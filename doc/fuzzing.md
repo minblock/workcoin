@@ -1,4 +1,4 @@
-Fuzz-testing WorkCoin Core
+Fuzz-testing Workcoin Core
 ==========================
 
 A special test harness `test_workcoin_fuzzy` is provided to provide an easy
@@ -20,7 +20,7 @@ export AFLPATH=$PWD
 Instrumentation
 ----------------
 
-To build WorkCoin Core using AFL instrumentation (this assumes that the
+To build Workcoin Core using AFL instrumentation (this assumes that the
 `AFLPATH` was set as above):
 ```
 ./configure --disable-ccache --disable-shared --enable-tests CC=${AFLPATH}/afl-gcc CXX=${AFLPATH}/afl-g++
@@ -31,13 +31,6 @@ make test/test_workcoin_fuzzy
 We disable ccache because we don't want to pollute the ccache with instrumented
 objects, and similarly don't want to use non-instrumented cached objects linked
 in.
-
-The fuzzing can be sped up significantly (~200x) by using `afl-clang-fast` and
-`afl-clang-fast++` in place of `afl-gcc` and `afl-g++` when compiling. When
-compiling using `afl-clang-fast`/`afl-clang-fast++` the resulting
-`test_workcoin_fuzzy` binary will be instrumented in such a way that the AFL
-features "persistent mode" and "deferred forkserver" can be used. See
-https://github.com/mcarpenter/afl/tree/master/llvm_mode for details.
 
 Preparing fuzzing
 ------------------
@@ -70,3 +63,4 @@ $AFLPATH/afl-fuzz -i ${AFLIN} -o ${AFLOUT} -m52 -- test/test_workcoin_fuzzy
 
 You may have to change a few kernel parameters to test optimally - `afl-fuzz`
 will print an error and suggestion if so.
+

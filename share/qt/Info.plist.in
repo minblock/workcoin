@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>WorkCoin-Qt</string>
+  <string>Workcoin-Qt</string>
   
   <key>CFBundleName</key>
-  <string>WorkCoin-Qt</string>
+  <string>Workcoin-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.workcoin.WorkCoin-Qt</string>
+  <string>org.workcoin.Workcoin-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.workcoin.WorkCoinPayment</string>
+      <string>org.workcoin.WorkcoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>workcoin</string>
@@ -60,7 +60,7 @@
       <key>UTTypeIdentifier</key>
       <string>org.workcoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>WorkCoin payment request</string>
+      <string>Workcoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>

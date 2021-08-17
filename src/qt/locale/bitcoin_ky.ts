@@ -38,8 +38,8 @@
         <translation>Билдирүүнү &amp;текшерүү...</translation>
     </message>
     <message>
-        <source>WorkCoin</source>
-        <translation>WorkCoin</translation>
+        <source>Workcoin</source>
+        <translation>Workcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -101,10 +101,6 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>WorkCoin</source>
-        <translation>WorkCoin</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Ката</translation>
     </message>
@@ -152,10 +148,6 @@
     <message>
         <source>none</source>
         <translation>жок</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Ката</translation>
     </message>
     </context>
 <context>

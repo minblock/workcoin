@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven WorkCoin tests.
+Utilities to generate test vectors for the data-driven Workcoin tests.
 
 Usage: 
 

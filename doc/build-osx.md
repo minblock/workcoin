@@ -11,45 +11,25 @@ Install the OS X command line tools:
 
 When the popup appears, click `Install`.
 
-Then install [Homebrew](https://brew.sh).
+Then install [Homebrew](http://brew.sh).
 
 Dependencies
 ----------------------
 
-    brew install automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf python3 qt libevent
+    brew install automake berkeley-db4 libtool boost --c++11 miniupnpc openssl pkg-config protobuf --c++11 qt5 libevent
 
-See [dependencies.md](dependencies.md) for a complete overview.
-
-If you want to build the disk image with `make deploy` (.dmg / optional), you need RSVG
+In case you want to build the disk image with `make deploy` (.dmg / optional), you need RSVG
 
     brew install librsvg
 
-If you want to build with ZeroMQ support
-    
-    brew install zeromq
-
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Berkeley DB
------------
-It is recommended to use Berkeley DB 4.8. If you have to build it yourself,
-you can use [the installation script included in contrib/](/contrib/install_db4.sh)
-like so
-
-```shell
-./contrib/install_db4.sh .
-```
-
-from the root of the repository.
-
-**Note**: You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
-
-Build WorkCoin Core
+Build Workcoin Core
 ------------------------
 
 1. Clone the workcoin source code and cd into `workcoin`
 
-        git clone https://github.com/minblock/workcoin
+        git clone https://github.com/workcoin-project/workcoin
         cd workcoin
 
 2.  Build workcoin-core:
@@ -70,32 +50,22 @@ Build WorkCoin Core
 
         make deploy
 
-5.  Installation into user directories (optional):
-
-        make install
-
-    or
-
-        cd ~/workcoin/src
-        cp workcoind /usr/local/bin/
-        cp workcoin-cli /usr/local/bin/
-
 Running
 -------
 
-WorkCoin Core is now available at `./src/workcoind`
+Workcoin Core is now available at `./src/workcoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=workcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/WorkCoin/workcoin.conf"
+    echo -e "rpcuser=workcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Workcoin/workcoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/WorkCoin/workcoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Workcoin/workcoin.conf"
 
 The first time you run workcoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/WorkCoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Workcoin/debug.log
 
 Other commands:
 -------
@@ -124,6 +94,6 @@ Uncheck everything except Qt Creator during the installation process.
 Notes
 -----
 
-* Tested on OS X 10.8 through 10.13 on 64-bit Intel processors only.
+* Tested on OS X 10.8 through 10.12 on 64-bit Intel processors only.
 
 * Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/bitcoin/bitcoin/issues/7714)

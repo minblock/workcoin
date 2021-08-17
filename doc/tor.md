@@ -1,7 +1,7 @@
 TOR SUPPORT IN WORKCOIN
 ======================
 
-It is possible to run WorkCoin as a Tor hidden service, and connect to such services.
+It is possible to run Workcoin as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many distributions default to having a SOCKS proxy listening on port 9050, but others may not. In particular, the Tor Browser Bundle defaults to listening on port 9150. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#TBBSocksPort) for how to properly
 configure Tor.
@@ -10,7 +10,7 @@ configure Tor.
 1. Run workcoin behind a Tor proxy
 ---------------------------------
 
-The first step is running WorkCoin behind a Tor proxy. This will already make all
+The first step is running Workcoin behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 
 	-proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -42,11 +42,11 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file):
 
 	HiddenServiceDir /var/lib/tor/workcoin-service/
-	HiddenServicePort 33888 127.0.0.1:33888
+	HiddenServicePort 9333 127.0.0.1:9333
 	HiddenServicePort 19335 127.0.0.1:19335
 
 The directory can be different of course, but (both) port numbers should be equal to
-your workcoind's P2P listen port (33888 by default).
+your workcoind's P2P listen port (9333 by default).
 
 	-externalip=X   You can tell workcoin about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
@@ -81,7 +81,7 @@ as well, use `discover` instead:
 
 	./workcoind ... -discover
 
-and open port 33888 on your firewall (or use -upnp).
+and open port 9333 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
@@ -93,13 +93,13 @@ for normal IPv4/IPv6 communication, use:
 
 Starting with Tor version 0.2.7.1 it is possible, through Tor's control socket
 API, to create and destroy 'ephemeral' hidden services programmatically.
-WorkCoin Core has been updated to make use of this.
+Workcoin Core has been updated to make use of this.
 
 This means that if Tor is running (and proper authentication has been configured),
-WorkCoin Core automatically creates a hidden service to listen on. This will positively 
+Workcoin Core automatically creates a hidden service to listen on. This will positively 
 affect the number of available .onion nodes.
 
-This new feature is enabled by default if WorkCoin Core is listening (`-listen`), and
+This new feature is enabled by default if Workcoin Core is listening (`-listen`), and
 requires a Tor connection to work. It can be explicitly disabled with `-listenonion=0`
 and, if not disabled, configured using the `-torcontrol` and `-torpassword` settings.
 To show verbose debugging information, pass `-debug=tor`.

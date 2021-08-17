@@ -37,46 +37,10 @@
         <source>&amp;Delete</source>
         <translation>&amp;Dzēst</translation>
     </message>
-    <message>
-        <source>Choose the address to send coins to</source>
-        <translation>Izvēlies adresi uz kuru sūtīt workcoins</translation>
-    </message>
-    <message>
-        <source>Choose the address to receive coins with</source>
-        <translation>Izvēlies adresi ar kuru saņemt workcoins</translation>
-    </message>
-    <message>
-        <source>&amp;Copy Address</source>
-        <translation>&amp;Kopēt adresi</translation>
-    </message>
-    <message>
-        <source>&amp;Edit</source>
-        <translation>&amp;Rediģēt</translation>
-    </message>
-    <message>
-        <source>Export Address List</source>
-        <translation>Eksportēt Adrešu Sarakstu</translation>
-    </message>
-    <message>
-        <source>Exporting Failed</source>
-        <translation>Eksportēšana Neizdevās</translation>
-    </message>
     </context>
 <context>
     <name>AddressTableModel</name>
-    <message>
-        <source>Label</source>
-        <translation>Nosaukums</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adrese</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(bez nosaukuma)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
@@ -94,30 +58,6 @@
     <message>
         <source>Repeat new passphrase</source>
         <translation>Jaunā parole vēlreiz</translation>
-    </message>
-    <message>
-        <source>Encrypt wallet</source>
-        <translation>Šifrēt maciņu</translation>
-    </message>
-    <message>
-        <source>Unlock wallet</source>
-        <translation>Atslēgt maciņu</translation>
-    </message>
-    <message>
-        <source>Decrypt wallet</source>
-        <translation>Atšifrēt maciņu</translation>
-    </message>
-    <message>
-        <source>Confirm wallet encryption</source>
-        <translation>Apstiprināt maciņa šifrēšanu</translation>
-    </message>
-    <message>
-        <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Vai tu tiešām vēlies šifrēt savu maciņu?</translation>
-    </message>
-    <message>
-        <source>Wallet encryption failed</source>
-        <translation>Maciņa šifrēšana neizdevās</translation>
     </message>
     </context>
 <context>
@@ -202,8 +142,8 @@
         <translation>Bloku reindeksēšana no diska...</translation>
     </message>
     <message>
-        <source>Send coins to a WorkCoin address</source>
-        <translation>Nosūtīt bitkoinus uz WorkCoin adresi</translation>
+        <source>Send coins to a Workcoin address</source>
+        <translation>Nosūtīt bitkoinus uz Workcoin adresi</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -226,8 +166,8 @@
         <translation>&amp;Pārbaudīt ziņojumu...</translation>
     </message>
     <message>
-        <source>WorkCoin</source>
-        <translation>WorkCoin</translation>
+        <source>Workcoin</source>
+        <translation>Workcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -254,12 +194,12 @@
         <translation>Šifrēt privātās atslēgas kuras pieder tavam maciņam</translation>
     </message>
     <message>
-        <source>Sign messages with your WorkCoin addresses to prove you own them</source>
-        <translation>Parakstīt ziņojumus ar savām WorkCoin adresēm lai pierādītu ka tās pieder tev</translation>
+        <source>Sign messages with your Workcoin addresses to prove you own them</source>
+        <translation>Parakstīt ziņojumus ar savām Workcoin adresēm lai pierādītu ka tās pieder tev</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified WorkCoin addresses</source>
-        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām WorkCoin adresēm</translation>
+        <source>Verify messages to ensure they were signed with specified Workcoin addresses</source>
+        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Workcoin adresēm</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -388,10 +328,6 @@
         <source>Confirmed</source>
         <translation>Apstiprināts</translation>
     </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(bez nosaukuma)</translation>
-    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -465,10 +401,6 @@
         <translation>Izmantot pielāgotu datu mapi:</translation>
     </message>
     <message>
-        <source>WorkCoin</source>
-        <translation>WorkCoin</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Kļūda</translation>
     </message>
@@ -526,12 +458,20 @@
         <translation>Skriptu &amp;pārbaudes pavedienu skaits</translation>
     </message>
     <message>
+        <source>Allow incoming connections</source>
+        <translation>Atļaut ienākošos savienojumus</translation>
+    </message>
+    <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Starpniekservera IP adrese (piem. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
         <translation>Minimizēt nevis aizvērt aplikāciju, kad logs tiek aizvērts. Kad šī iespēja ir ieslēgta, aplikācija tiks aizvērta, izvēloties Aizvērt izvēlnē.</translation>
+    </message>
+    <message>
+        <source>Third party transaction URLs</source>
+        <translation>Trešo personu transakciju URLs</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
@@ -566,8 +506,8 @@
         <translation>&amp;Tērēt neapstiprinātu atlikumu</translation>
     </message>
     <message>
-        <source>Automatically open the WorkCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Uz rūtera automātiski atvērt WorkCoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
+        <source>Automatically open the Workcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Uz rūtera automātiski atvērt Workcoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -619,7 +559,7 @@
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Vai rādīt WorkCoin kontroles funkcijas vai nē.</translation>
+        <translation>Vai rādīt Workcoin kontroles funkcijas vai nē.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -642,10 +582,6 @@
         <translation>Apstiprināt iestatījumu atiestatīšanu</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation>Kļūda</translation>
-    </message>
-    <message>
         <source>The supplied proxy address is invalid.</source>
         <translation>Norādītā starpniekservera adrese nav derīga.</translation>
     </message>
@@ -657,8 +593,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WorkCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar WorkCoin tīklu, taču šis process vēl nav beidzies.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Workcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Workcoin tīklu, taču šis process vēl nav beidzies.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -717,27 +653,7 @@
         <source>%1 and %2</source>
         <translation>%1 un %2</translation>
     </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KB</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GB</translation>
-    </message>
-    <message>
-        <source>unknown</source>
-        <translation>nav zināms</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -807,6 +723,10 @@
         <translation>&amp;Tīkla Satiksme</translation>
     </message>
     <message>
+        <source>&amp;Clear</source>
+        <translation>&amp;Notīrīt</translation>
+    </message>
+    <message>
         <source>Totals</source>
         <translation>Kopsummas</translation>
     </message>
@@ -826,6 +746,30 @@
         <source>Clear console</source>
         <translation>Notīrīt konsoli</translation>
     </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation>Izmantojiet bultiņas uz augšu un leju, lai pārvietotos pa vēsturi, un &lt;b&gt;Ctrl-L&lt;/b&gt; ekrāna notīrīšanai.</translation>
+    </message>
+    <message>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Ierakstiet &lt;b&gt;help&lt;/b&gt; lai iegūtu pieejamo komandu sarakstu.</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
@@ -840,6 +784,10 @@
     <message>
         <source>&amp;Message:</source>
         <translation>&amp;Ziņojums:</translation>
+    </message>
+    <message>
+        <source>R&amp;euse an existing receiving address (not recommended)</source>
+        <translation>&amp;Atkārtoti izmantot esošo saņemšanas adresi (nav ieteicams)</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
@@ -892,25 +840,9 @@
         <source>&amp;Save Image...</source>
         <translation>&amp;Saglabāt Attēlu...</translation>
     </message>
-    <message>
-        <source>Address</source>
-        <translation>Adrese</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Nosaukums</translation>
-    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
-    <message>
-        <source>Label</source>
-        <translation>Nosaukums</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(bez nosaukuma)</translation>
-    </message>
     </context>
 <context>
     <name>SendCoinsDialog</name>
@@ -920,7 +852,7 @@
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>WorkCoin Kontroles Funkcijas</translation>
+        <translation>Workcoin Kontroles Funkcijas</translation>
     </message>
     <message>
         <source>Inputs...</source>
@@ -994,11 +926,7 @@
         <source>S&amp;end</source>
         <translation>&amp;Sūtīt</translation>
     </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(bez nosaukuma)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
@@ -1099,8 +1027,8 @@
         <translation>Kopēt parakstu uz sistēmas starpliktuvi</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this WorkCoin address</source>
-        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs WorkCoin adreses īpašnieks.</translation>
+        <source>Sign the message to prove you own this Workcoin address</source>
+        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Workcoin adreses īpašnieks.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1153,29 +1081,9 @@
     </context>
 <context>
     <name>TransactionTableModel</name>
-    <message>
-        <source>Label</source>
-        <translation>Nosaukums</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(bez nosaukuma)</translation>
-    </message>
     </context>
 <context>
     <name>TransactionView</name>
-    <message>
-        <source>Label</source>
-        <translation>Nosaukums</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adrese</translation>
-    </message>
-    <message>
-        <source>Exporting Failed</source>
-        <translation>Eksportēšana Neizdevās</translation>
-    </message>
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
@@ -1216,8 +1124,8 @@
         <translation>Darbināt fonā kā servisu un pieņemt komandas</translation>
     </message>
     <message>
-        <source>WorkCoin Core</source>
-        <translation>WorkCoin Core</translation>
+        <source>Workcoin Core</source>
+        <translation>Workcoin Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -1250,6 +1158,10 @@
     <message>
         <source>Verifying blocks...</source>
         <translation>Pārbauda blokus...</translation>
+    </message>
+    <message>
+        <source>Verifying wallet...</source>
+        <translation>Pārbauda maciņu...</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -1300,6 +1212,14 @@
         <translation>Atļaut DNS uzmeklēšanu priekš -addnode, -seednode un -connect</translation>
     </message>
     <message>
+        <source>Loading addresses...</source>
+        <translation>Ielādē adreses...</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Nederīga -proxy adrese: '%s'</translation>
+    </message>
+    <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>-onlynet komandā norādīts nepazīstams tīkls: '%s'</translation>
     </message>
@@ -1312,12 +1232,20 @@
         <translation>Ielādē bloku indeksu...</translation>
     </message>
     <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation>Pievienot mezglu, kam pievienoties un turēt savienojumu atvērtu</translation>
+    </message>
+    <message>
         <source>Loading wallet...</source>
         <translation>Ielādē maciņu...</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
         <translation>Nevar maciņa formātu padarīt vecāku</translation>
+    </message>
+    <message>
+        <source>Cannot write default address</source>
+        <translation>Nevar ierakstīt adresi pēc noklusēšanas</translation>
     </message>
     <message>
         <source>Rescanning...</source>
