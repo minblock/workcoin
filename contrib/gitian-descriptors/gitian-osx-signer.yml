@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/workcoin-project/workcoin-detached-sigs.git"
+- "url": "https://github.com/minblock/workcoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "workcoin-osx-unsigned.tar.gz"

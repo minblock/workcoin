@@ -5,16 +5,16 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.14.2
+!define VERSION 0.14.3
 !define COMPANY "Workcoin Core project"
 !define URL https://workcoin.org/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/workcoin/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/workcoin/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/stevecat/github/workcoin/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/stevecat/github/workcoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/workcoin/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/stevecat/github/workcoin/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -22,7 +22,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Workcoin Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\workcoin-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/workcoin/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/stevecat/github/workcoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /workcoin/workcoin-${VERSION}-win-setup.exe
+OutFile /home/stevecat/github/workcoin/workcoin-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\Workcoin
 !else
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /workcoin/release/workcoin-qt
-    File /oname=COPYING.txt /workcoin/COPYING
-    File /oname=readme.txt /workcoin/doc/README_windows.txt
+    File /home/stevecat/github/workcoin/release/workcoin-qt
+    File /oname=COPYING.txt /home/stevecat/github/workcoin/COPYING
+    File /oname=readme.txt /home/stevecat/github/workcoin/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /workcoin/release/workcoind
-    File /workcoin/release/workcoin-cli
+    File /home/stevecat/github/workcoin/release/workcoind
+    File /home/stevecat/github/workcoin/release/workcoin-cli
     SetOutPath $INSTDIR\doc
-    File /r /workcoin/doc\*.*
+    File /r /home/stevecat/github/workcoin/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd

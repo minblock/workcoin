@@ -3,8 +3,8 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-SRCDIR="/workcoin"
-BUILDDIR="/workcoin"
+SRCDIR="/home/stevecat/github/workcoin"
+BUILDDIR="/home/stevecat/github/workcoin"
 EXEEXT=""
 
 # These will turn into comments if they were disabled when configuring.

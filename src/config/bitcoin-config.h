@@ -21,7 +21,7 @@
 #define CLIENT_VERSION_MINOR 14
 
 /* Build revision */
-#define CLIENT_VERSION_REVISION 2
+#define CLIENT_VERSION_REVISION 3
 
 /* Copyright holder(s) before %s replacement */
 #define COPYRIGHT_HOLDERS "The %s developers"
@@ -104,7 +104,7 @@
 
 /* Define to 1 if you have the declaration of `EVP_MD_CTX_new', and to 0 if
    you don't. */
-#define HAVE_DECL_EVP_MD_CTX_NEW 0
+#define HAVE_DECL_EVP_MD_CTX_NEW 1
 
 /* Define to 1 if you have the declaration of `htobe16', and to 0 if you
    don't. */
@@ -313,13 +313,13 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "https://github.com/workcoin-project/workcoin/issues"
+#define PACKAGE_BUGREPORT "https://github.com/minblock/workcoin/issues"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "Workcoin Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Workcoin Core 0.14.2"
+#define PACKAGE_STRING "Workcoin Core 0.14.3"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "workcoin"
@@ -328,7 +328,7 @@
 #define PACKAGE_URL "https://workcoin.org/"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.14.2"
+#define PACKAGE_VERSION "0.14.3"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */
@@ -356,7 +356,7 @@
 #define USE_DBUS 1
 
 /* Define if QR support should be compiled in */
-#define USE_QRCODE 1
+/* #undef USE_QRCODE */
 
 /* UPnP support not compiled if undefined, otherwise value (0 or 1) determines
    default state */
