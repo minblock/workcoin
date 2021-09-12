@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "httpserver.h"
-
+#include <deque>
 #include "chainparamsbase.h"
 #include "compat.h"
 #include "util.h"
