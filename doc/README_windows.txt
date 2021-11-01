@@ -1,5 +1,5 @@
-Workcoin Core 0.14.2
-=====================
+Workcoin Core
+=============
 
 Intro
 -----
