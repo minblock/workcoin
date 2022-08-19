@@ -121,7 +121,7 @@ public:
         // release ASAP to avoid it where possible.
         vSeeds.emplace_back("seed.picsco.in");
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,30);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,73); //reggy addys will begin with W
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
         base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,72); //Segwit addresses will begin with a V or W
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
